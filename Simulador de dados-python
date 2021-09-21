@@ -1,0 +1,22 @@
+import random
+
+def simulador():
+    print("Dado lançado!")
+    print(random.randrange(1,6))
+    print()
+
+def startGame():
+    aux = bool(int(input("Gostaria de jogar? Sim - 1 / Não - 0:")))
+    
+    if aux:
+         return True
+
+    else:
+         print("Jogo finalizado")      
+         return False   
+
+def main():
+    while startGame():
+        simulador()
+
+main()
